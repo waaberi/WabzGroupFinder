@@ -22,20 +22,22 @@ async function getgroup() {
     var randomnum = Math.floor(Math.random() * 9999999) + 1;
     //var group = await superagent.get(lmao("gc", randomnum));
     var group = await fetch(lmao("gc", randomnum));
-    group = await group.json();
+    group = await group.text();
     //var robux = await superagent.get(lmao("rc", randomnum));
     var robux = await fetch(lmao("rc", randomnum));
-    robux = await robux.json();
-    var ownerinfo = JSON.parse(group.text).owner;
-    if (ownerinfo == null && JSON.parse(group.text).publicEntryAllowed) {
+    robux = await robux.text();
+    var ownerinfo = JSON.parse(group).owner;
+    if (ownerinfo == null && JSON.parse(group).publicEntryAllowed) {
       var outputres = `Groupid: ${randomnum}
 Groupurl: ${lmao("gu", randomnum)}
-Robux amount: ${JSON.parse(robux.text).robux}
-isLocked: ${!JSON.parse(group.text).publicEntryAllowed}`;
-      console.log(JSON.parse(group.text));
+Robux amount: ${JSON.parse(robux).robux}
+isLocked: ${!JSON.parse(group).publicEntryAllowed}`;
+      console.log(JSON.parse(group));
       hook.success("**Success**", "Ownerless unlocked Group Found", outputres);
     }
-  } catch {}
+  } catch (ex) {
+    console.log(ex);
+  }
 }
 var main = async () => {
   console.log("online");
