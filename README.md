@@ -15,14 +15,14 @@ You need:
 
 1. Clone this repository (or download as ZIP and extract)
 2. Change the directory to that repository
-3. Run <pre>npm install</pre> to install the dependencies
+3. Run <code>npm install</code> to install the dependencies
 4. Create a .env file
    <pre>
    WEBHOOK_URL=Your_webhook_url_here
    MODE=normal
    </pre>
    Normal is the normal mode. Proxy mode is comming soon. Keep in mind that it is case sensitive.
-5. Run <pre>node index.js</pre> to run the code.
+5. Run <code>node index.js</code> to run the code.
 
 You might want to run this with PM2, a guide for this is comming soon.
 
@@ -35,6 +35,6 @@ If you have some bash emulator (CygWin, MinTTY), you can follow the Unix based O
 
 You need Python3 to run this installer. It is installed on most Unix based OSes by default. You also need the bash shell. It's the default shell for almost all Unix Based OSes.
 
-Run this command on bash: <pre>python3 <(wget https://raw.githubusercontent.com/rblxploit/WabzGroupFinder/master/install.py -q -O-)</pre>
+Run this command on bash: <code>python3 <(wget https://raw.githubusercontent.com/rblxploit/WabzGroupFinder/master/install.py -q -O-)</code>
 
 It will tell you the rest.
