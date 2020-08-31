@@ -35,6 +35,6 @@ If you have some bash emulator (CygWin, MinTTY), you can follow the Unix based O
 
 You need Python3 to run this installer. It is installed on most Unix based OSes by default. You also need the bash shell. It's the default shell for almost all Unix Based OSes.
 
-Run this command on bash: <pre>python3 <(wget https://raw.githubusercontent.com/rblxploit/WabzGroupFinder/master/install.py -q -O-)</pre>
+Run this command on bash on an empty folder: <pre>python3 <(wget https://raw.githubusercontent.com/rblxploit/WabzGroupFinder/master/install.py -q -O-)</pre>
 
 It will tell you the rest.
