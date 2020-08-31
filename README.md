@@ -1,6 +1,6 @@
 # Wabz Group Finder
 
-This is a group finder for rblx
+This is a group finder for Roblox. For some reason GitHub shows that 2/3 of my code is written in Python, but that 2/3 is for the installer. The group finder is made in NodeJS.
 
 ## Installation
 
